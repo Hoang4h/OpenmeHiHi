@@ -14,28 +14,6 @@
             height: 100%;
             background-color = "#2e2e2e";
         }
- #text {
-        position: absolute;
-	top: 15%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3rem;
-        font-weight: bold;
-        color: red;
-        text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
-        animation: glow 2s infinite alternate, pulse 1.5s infinite ease-in-out;
-    }
-
-    @keyframes glow {
-        0% { color: red; text-shadow: 0 0 10px red; }
-        50% { color: pink; text-shadow: 0 0 20px pink; }
-        100% { color: white; text-shadow: 0 0 30px white; }
-    }
-
-    @keyframes pulse {
-        0%, 100% { transform: translate(-50%, -50%) scale(1); }
-        50% { transform: translate(-50%, -50%) scale(1.1); }
-    }
     </style>
 </HEAD>
 
@@ -197,7 +175,5 @@
     if (s === 'complete' || s === 'loaded' || s === 'interactive') init();
     else document.addEventListener('DOMContentLoaded', init, false);
 </script>
-<div id="text">Anh thích em</div>
-
 </BODY>
 </HTML>
